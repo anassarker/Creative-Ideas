@@ -566,6 +566,10 @@ video {
   }
 }
 
+.sticky {
+  position: sticky;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -662,6 +666,12 @@ video {
 }
 
 .container{
+  transition: 0.6s;
+}
+
+.navbar.sticky{
+  background: #fff;
+  padding: 15px 600px;
 }
 
 #nav-button{
@@ -676,11 +686,16 @@ video {
   font-family: 'Mooli', sans-serif;
 }
 
-#navbar{
+.container.sticky{
+  padding: 15px 100px;
+  background: #fff;
+}
+
+.navbar{
   padding: 15px;
 }
 
-#navbar img{
+.navbar img{
   padding-top: 10px;
   margin-left: 50px;
 }

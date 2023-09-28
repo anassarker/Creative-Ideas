@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 .container{
+    transition: 0.6s;
     
+}
+.navbar.sticky{
+    background: #fff;
+    padding: 15px 600px;
 }
 #nav-button{
     padding: 8px 15px 8px 15px;
@@ -14,10 +19,14 @@
     padding-right: 50px;
     font-family: 'Mooli', sans-serif;
 }
-#navbar{
+.container.sticky{
+    padding: 15px 100px;
+    background: #fff;
+}
+.navbar{
     padding: 15px;
 }
-#navbar img{
+.navbar img{
     padding-top: 10px;
     margin-left: 50px;
 }
