@@ -192,3 +192,40 @@ p{
     /* max-width: 50%; */
     padding-right: 15px;
 }
+.portfolio .filters{
+    border: 2px solid #dee2e6;
+    border-radius: 100px;
+    padding: 2px;
+    margin: 0 auto 20px;
+    max-width: 400px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.portfolio .filters a.active{
+    opacity: 1;
+    border-radius: 100px;
+    background: #ff6e42;
+    color: #fff;
+}
+.portfolio .filters a:first-child{
+    margin-left: 0;
+}
+.portfolio .filters a:last-child{
+    margin-right: 0;
+}
+.portfolio .filters a{
+    flex-basis: 0;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 14px;
+    transition:all  0.3s;
+    color: #444;
+    opacity: .7;
+
+
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}

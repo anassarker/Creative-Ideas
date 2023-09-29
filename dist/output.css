@@ -654,6 +654,10 @@ video {
   background-position: center;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -674,6 +678,10 @@ video {
   padding: 2rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -682,12 +690,24 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
 
 .pt-60 {
   padding-top: 15rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -723,6 +743,11 @@ video {
   line-height: 1rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -743,6 +768,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutral-300 {
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity));
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -970,6 +1005,46 @@ p{
   flex: 0 0 70%;
   /* max-width: 50%; */
   padding-right: 15px;
+}
+
+.portfolio .filters{
+  border: 2px solid #dee2e6;
+  border-radius: 100px;
+  padding: 2px;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio .filters a.active{
+  opacity: 1;
+  border-radius: 100px;
+  background: #ff6e42;
+  color: #fff;
+}
+
+.portfolio .filters a:first-child{
+  margin-left: 0;
+}
+
+.portfolio .filters a:last-child{
+  margin-right: 0;
+}
+
+.portfolio .filters a{
+  flex-basis: 0;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 14px;
+  transition:all  0.3s;
+  color: #444;
+  opacity: .7;
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .hover\:bg-orange-600:hover {
