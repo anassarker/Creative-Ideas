@@ -1,18 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Exo+2:wght@200&family=Libre+Baskerville&family=Young+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Custom CSS */
-
-/* Header */
-.container {
-    transition: 0.6s;
-}
-
-.navbar.sticky {
-    background: #fff;
-    padding: 15px 600px;
-}
 
 #nav-button {
     padding: 8px 15px 8px 15px;
@@ -337,3 +327,4 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+
