@@ -285,16 +285,23 @@
     
     <script>
         const children = document.querySelectorAll('.child');
+        let activeTextBox = null;
+        function removeHoverFromActive() {
+          if (activeTextBox) {            
+            activeTextBox.classList.remove('border-orange-500');
+          }
+        }        
         children.forEach(child => {
           child.addEventListener('click', function(event) {
-            event.stopPropagation();
-            this.classList.toggle('border-orange-500');
+            event.stopPropagation();     
+            removeHoverFromActive();
+                this.classList.toggle('border-orange-500');
+                activeTextBox = this;
           });
         });
         window.addEventListener('click', function() {
-          children.forEach(child => {
-            child.classList.remove('border-orange-500');
-          });
+            removeHoverFromActive();
+            activeTextBox = null;
         });
       </script>
       
